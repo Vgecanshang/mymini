@@ -1,4 +1,4 @@
-# Insurance
+# uni-app template project
 
 #### 命令说明
 
