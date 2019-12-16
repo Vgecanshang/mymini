@@ -1,5 +1,23 @@
 # uni-app template project
 
+#### 配置项目
+
+```
+#1.安装依赖
+yarn install
+
+#2.解决scss报错的问题
+yarn remove node-sass sass-loader
+yarn add node-sass sass-loader -D
+
+#3.cli 4.x rpx/upx编译到小程序或H5产生乱码的问题解决（降级到3.12.1）
+yarn add @vue/cli-service@3.12.1 -D
+
+#4.编辑到环境
+yarn dev:mp-weixin/yarn dev:h5
+
+```
+
 #### 命令说明
 
 ```
