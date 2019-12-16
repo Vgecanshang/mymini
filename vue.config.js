@@ -1,7 +1,7 @@
 module.exports = {
     css: {
         loaderOptions: {
-            sass: {
+            scss: {
                 // @/ 是 src/ 的别名
                 prependData: '@import "~@/scss/uni.scss";'
             }

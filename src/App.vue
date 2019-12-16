@@ -14,6 +14,7 @@ export default Vue.extend({
 })
 </script>
 
-<style>
+<style lang="scss">
 /*每个页面公共css */
+@import '~@/scss/iconfont/iconfont.scss';
 </style>

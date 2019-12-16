@@ -1,1 +1,114 @@
 // 全局公共变量
+@import  '@/scss/constant.scss';
+// mixin混合样式
+@import '@/scss/mixins/index.scss';
+/* Normalize */
+image {
+	width: 100%;
+	height: 100%;
+	// 预约3D渲染
+	// will-change: transform;
+}
+view {
+	box-sizing: border-box;
+}
+button {
+	&.#{$zt-prefix}-view {
+		padding: 0;
+		line-height: initial;
+		border-radius: initial;
+		font-weight: normal;
+		font-size: inherit;
+		text-align: initial;
+		overflow: initial;
+		background: initial;
+		color: inherit;
+		&:not([size='mini']) {
+			margin: unset;
+			width: initial;
+			min-height: initial;
+		}
+		&::after {
+			content: normal;
+			width: auto;
+			height: auto;
+			position: static;
+			top: initial;
+			left: initial;
+			border: none;
+			transform: initial;
+			transform-origin: initial;
+			border-radius: initial;
+		}
+	}
+}
+swiper{
+	&.zt-swiper-dot{
+		.wx-swiper-dot{
+			width: 10upx;
+			height: 10upx;
+			&-active{
+				width: 20upx;
+				height: 10upx;
+				border-radius: 10upx;
+			}
+		}
+	}
+	
+}
+/* Color */
+.c {
+	&-primary {
+		color: $color-primary;
+	}
+	&-primary-1 {
+		color: $color-primary-1;
+	}
+	&-primary-2 {
+		color: $color-primary-2;
+	}
+	&-primary-3 {
+		color: $color-primary-3;
+	}
+	&-primary-4 {
+		color: $color-primary-4;
+	}
+	&-primary-5 {
+		color: $color-primary-5;
+	}
+	&-gray-1 {
+		color: $text-color;
+	}
+	&-gray-2 {
+		color: $text-color-secondary;
+	}
+	&-gray-3 {
+		color: $text-color-thirdly;
+	}
+	&-gray-4 {
+		color: $text-color-gray;
+	}
+}
+.text {
+	&-bold {
+		font-weight: $layout-fontweight-bold;
+	}
+	&-bolded {
+		font-weight: $layout-fontweight-bolded;
+	}
+}
+.bg{
+	&-white{
+		background-color: $color-white !important;
+	}
+}
+/* Cutomser */
+.page {
+	color: $text-color;
+	font-size: $layout-fontsize;
+	background-color: $layout-background;
+}
+.iconfont {
+	display: inline-block;
+	line-height: 1;
+}
